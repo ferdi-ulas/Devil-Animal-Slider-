@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+.title {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  font-size: 15px;
+  line-height: 1;
+  top: 3%;
+  left: 3%;
+  padding: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+.title:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.carousel {
+  height: 100vh;
+}
+
+.item .img-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  transform: translateY(100%);
+  transition: 0.4s ease;
+  transition-delay: 0.6s;
+  overflow: hidden;
+}
+
+.item .img-box::before {
+  content: "";
+  position: absolute;
+  right: 22%;
+  width: 500px;
+  height: 100%;
+  background: rgb(255, 255, 255, 0.8);
+  border-radius: 50%;
+  filter: blur(200px);
+}
+
+.item.active .img-box,
+.item.previously-active .img-box {
+  transition-delay: 0.2s;
+}
+
+.item.active .img-box {
+  transform: translateY(0);
+}
+
+.item.back-active .img-box {
+  transition: none;
+}
+
+.item:nth-child(1) .img-box {
+  background: #a9350a;
+}
+
+.item:nth-child(2) .img-box {
+  background: #201f1e;
+}
+.item:nth-child(3) .img-box {
+  background: #7e0806;
+}
+.item:nth-child(4) .img-box {
+  background: #5d2917;
+}
+
+.img-box img {
+  position: absolute;
+  bottom: 0;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+  transform: translateX(20%);
+}
+
+.item:nth-child(2) .img-box img {
+  transform: translateX(22%);
+}
+
+.item .info-box {
+  position: absolute;
+  left: 5%;
+  top: 35%;
+  transform: translateX(-3%);
+  width: 450px;
+  height: 280px;
+  z-index: 1;
+}
+
+.item.active .info-box {
+  z-index: 2;
+}
+
+.info-box .info-slider {
+  transition: 0.7s cubic-bezier(0.68, -0.55, 0.1, 1);
+}
+
+.info-slider .info-item {
+  height: 846px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  transform: translateY(calc(var(--i) * 100%));
+  margin-top: -50%;
+}
+
+.info-item h2 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.info-item p {
+  font-size: 16px;
+  margin: 15px 0 20px;
+}
+
+.info-item .btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 47px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 1);
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.thumb {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  list-style: none;
+  z-index: 100;
+}
+
+.thumb li {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 25px 0;
+  overflow: hidden;
+}
+
+.thumb li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thumb li.disabled {
+  pointer-events: none;
+}
+
+.selected {
+  border: 3px solid #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    top: 1%;
+    margin-top: 10px;
+    font-size: 15px;
+    left: 5%;
+    cursor: pointer;
+  }
+
+
+
+  .item .info-box {
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    height: auto;
+    margin-top: -25%;
+  }
+
+  .item:nth-child(2) .img-box img {
+    transform: translateX(0%);
+  }
+  .info-item h2 {
+    font-size: 28px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+    margin: 10px 0 15px;
+  }
+
+  .info-item .btn {
+    width: 160px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .thumb {
+    right: 2%;
+    top: 90%;
+    transform: translateY(-90%);
+  }
+
+  .thumb li {
+    width: 70px;
+    height: 70px;
+    margin: 15px 0;
+  }
+
+  .img-box img {
+    transform: translateX(0);
+    width: 100%;
+    height: 60%; 
+  }
+}
