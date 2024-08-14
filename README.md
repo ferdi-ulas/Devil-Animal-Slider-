@@ -10,4 +10,6 @@
 - Responsive Design: The project is designed to be fully responsive, adapting to all screen sizes, including mobile devices.
 - User-Friendly: A simple and intuitive interface provides an easy-to-use experience.
 
-# 🚀 [Demo](https://66bbe37d4adcc4d1627bdecf--grand-strudel-8b2006.netlify.app/)
+# 🚀 <a href="https://66bbe37d4adcc4d1627bdecf--grand-strudel-8b2006.netlify.app/" target="_blank">Demo</a>
+
+
