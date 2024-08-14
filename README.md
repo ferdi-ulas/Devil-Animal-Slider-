@@ -3,11 +3,11 @@
 <p align="center"><img src="https://github.com/ferdi-ulas/Devil-Animal-Slider-/blob/main/images/Slider%20Devil.png"></p>
 
 
-## Proje Özellikleri
+## Project Features
 
-- **Dinamik Slider:** Kullanıcılar, çeşitli "şeytan" temalı hayvan görsellerini bir slider aracılığıyla kaydırabilir ve her bir görsel arasında geçiş yapabilir.
-- **Etkileyici Görseller:** Farklı hayvanların, şeytani ve mistik temalarla oluşturulmuş özel olarak seçilmiş görselleri.
-- **Responsive Tasarım:** Proje, mobil cihazlar da dahil olmak üzere tüm ekran boyutlarına uyumlu olacak şekilde tasarlanmıştır.
-- **Kolay Kullanım:** Sade ve anlaşılır bir arayüz ile kullanıcı dostu deneyim.
+- Dynamic Slider: Users can browse through various "demon-themed" animal images using a slider, allowing them to transition between each visual.
+- Striking Visuals: A curated selection of images featuring different animals with demonic and mystical themes.
+- Responsive Design: The project is designed to be fully responsive, adapting to all screen sizes, including mobile devices.
+- User-Friendly: A simple and intuitive interface provides an easy-to-use experience.
 
 # 🚀 [Demo](https://66bbe37d4adcc4d1627bdecf--grand-strudel-8b2006.netlify.app/)
